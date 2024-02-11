@@ -8,51 +8,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="grid-container">
       <header class="header">
-        <!-- <div class="header-top">
-          <div class="search-bar">
-            <div class="search-icon">
-              <img
-                src="icons/magnify.svg"
-                alt="search-icon"
-                width="25px"
-                height="25px"
-              />
-            </div>
-            <div class="input-box">
-              <input type="search" id="search" />
-            </div>
-          </div>
-          <div class="bell-section">
-            <img
-              src="icons/bell-ring.svg"
-              alt="bell-icon"
-              height="25px"
-              width="25px"
-            />
-            <img
-              class="profile"
-              src="images/profile-img.jpg"
-              alt=""
-              width="50px"
-              height="50px"
-              style="border-radius: 50%"
-            />
-            <h3>Morgan Oakley</h3>
+        <div class="top-left">
+          <label for="search"
+            ><img
+              src="icons/magnify.svg"
+              class="search-icon"
+              width="30px"
+              height="30px"
+          /></label>
+          <input type="search" name="search" id="searchBar" />
+        </div>
+        <div class="top-right">
+          <label for="bell-icon">
+            <img src="icons/bell-ring.svg" width="30px" height="30px" />
+          </label>
+          <img
+            src="images/profile-img.jpg"
+            width="50px"
+            height="50px"
+            style="border-radius: 50%; margin-right: 30px"
+          />
+          <h2>Morgan Oakley</h2>
+        </div>
+        <div class="bottom-left">
+          <img src="images/profile-img.jpg" width="65px" height="65px" />
+          <div class="welcome-message">
+            <p style="font-size: 1em">Hi there,</p>
+            <h3 style="font-size: 1.5em">Morgan Oakley (@morgan)</h3>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="bottom-left-section"></div>
-          <div class="bottom-right-section"></div>
-        </div> -->
+        <div class="bottom-right">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
       </header>
-      <aside class="sidebar"></aside>
+      <aside class="sidebar">
+        <div class="dashboard-section">
+          <label for="dashboard-icon">
+            <img src="icons/view-dashboard.svg" width="50px" height="50px" />
+          </label>
+          <p>Dashboard</p>
+        </div>
+        <div class="first-section">
+          <img src="icons/home.svg" height="25px" width="25px" />
+          <p>Home</p>
+          <img
+            src="icons/card-account-details-outline.svg"
+            height="25px"
+            width="25px"
+          />
+          <p>Profile</p>
+          <img src="icons/message.svg" height="25px" width="25px" />
+          <p>Messages</p>
+          <img src="icons/history.svg" height="25px" width="25px" />
+          <p>History</p>
+          <img src="icons/calendar-check.svg" height="25px" width="25px" />
+          <p>Tasks</p>
+          <img
+            src="icons/account-group-outline.svg"
+            height="25px"
+            width="25px"
+          />
+          <p>Communities</p>
+        </div>
+        <div class="second-section">
+          <img src="icons/cog.svg" height="25px" width="25px" />
+          <p>Settings</p>
+          <img src="icons/help-box.svg" height="25px" width="25px" />
+          <p>Support</p>
+          <img src="icons/shield-check.svg" height="25px" width="25px" />
+          <p>Privacy</p>
+        </div>
+      </aside>
       <main class="main-container"></main>
     </div>
   </body>
