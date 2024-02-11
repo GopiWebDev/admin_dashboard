@@ -1,3 +1,9 @@
+:root {
+  --header-color: white;
+  --sidebar-color: #cbf1f5;
+  --main-color: #e2e8f0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +21,9 @@
   display: grid;
   grid-template-columns: 3fr 1.5fr;
   grid-template-rows: 1fr 1.25fr;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: var(--header-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  clip-path: inset(0px 0px -15px 0px);
 }
 
 .top-left {
@@ -89,8 +97,10 @@
 }
 
 .sidebar {
-  background: #dbeafe;
+  background: var(--sidebar-color);
   grid-row: 1 / 5;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  clip-path: inset(0px -15px 0px 0px);
 }
 
 .dashboard-section {
@@ -139,13 +149,95 @@
 .main-container {
   grid-row: 2 / 5;
   display: grid;
-  grid-template-columns: 4fr 1.5fr;
+  grid-template-columns: 4fr 2.5fr;
+  background: var(--main-color);
+  padding: 1rem 1rem;
+  gap: 1rem;
 }
 
 .projects-section {
-  background: darkblue;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 370px);
+  grid-template-rows: 20px repeat(3, 200px);
+  gap: 20px;
+  margin: 20px;
+}
+
+.project-heading {
+  font-size: 1.5em;
+  grid-area: 1/1/2/3;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+}
+
+.side-line {
+  width: 10px;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+  background: orange;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  height: 60%;
+  margin: 15px;
+  text-align: start;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.interactions {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.interactions img {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px;
+}
+
+.content h3 {
+  margin: 10px;
 }
 
 .side-section {
-  background: green;
+  display: grid;
+  grid-template-rows: 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  margin: 20px;
+}
+
+.titles {
+  font-size: 1.5em;
+  margin-left: 12px;
+}
+
+.announce-box {
+  background: red;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.trending-box {
+  background: red;
+  margin: 10px;
+  border-radius: 15px;
 }
