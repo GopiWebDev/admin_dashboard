@@ -137,6 +137,15 @@
 }
 
 .main-container {
-  background: red;
   grid-row: 2 / 5;
+  display: grid;
+  grid-template-columns: 4fr 1.5fr;
+}
+
+.projects-section {
+  background: darkblue;
+}
+
+.side-section {
+  background: green;
 }
